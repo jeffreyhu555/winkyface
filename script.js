@@ -23,12 +23,7 @@ $('textarea').bind('keydown',function (e) {
     var $t = $(this);
     if (e.which==8){
     insertAtCursor(this, ';) ');
-<<<<<<< HEAD
     } else if (e.which==46){
-=======
-    }
-    else if (e.which==46){
->>>>>>> origin/master
     insertAtCursor(this, ' ;)');
     }
 });
@@ -41,13 +36,7 @@ $('input').bind('keydown',function (e) {
     var $t = $(this);
     if(e.which==8){
     insertAtCursor(this, ';) ');
-<<<<<<< HEAD
     } else if (e.which==46){
-=======
-    }
-<<<<<<< HEAD
-    else if (e.which==46){
->>>>>>> origin/master
     insertAtCursor(this, ' ;)');
     }
 });
