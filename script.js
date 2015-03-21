@@ -23,38 +23,21 @@ $('textarea').bind('keydown',function (e) {
     var $t = $(this);
     if (e.which==8){
     insertAtCursor(this, ';) ');
-    }
-    if (e.which==46){
+    } else if (e.which==46){
     insertAtCursor(this, ' ;)');
     }
 });
 
-$('textarea').bind('keydown',function (e) {
-    var $t = $(this);
-    if (e.which==46){
-    insertAtCursor(this, ';) ');
-    }
-});
 
 $('input').bind('keydown',function (e) {
     var $t = $(this);
     if(e.which==8){
     insertAtCursor(this, ';) ');
-    }
-<<<<<<< HEAD
-    if (e.which==46){
+    } else if (e.which==46){
     insertAtCursor(this, ' ;)');
     }
 });
-=======
-});
 
-$('input').bind('keydown',function (e) {
-    var $t = $(this);
-    if(e.which==46){
-    insertAtCursor(this, ';) ');
-    }
-});
 // delete key = 46
 //Popupbox method
 //window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+0008'||e.keyIdentifier=='Backspace'){window.alert("this is a string")}},true);
