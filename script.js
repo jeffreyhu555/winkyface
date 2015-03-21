@@ -24,11 +24,17 @@ $('textarea').bind('keydown',function (e) {
     if (e.which==8){
     insertAtCursor(this, ';) ');
     }
+    if (e.which==46){
+    insertAtCursor(this, ' ;)');
+    }
 });
 
 $('input').bind('keydown',function (e) {
     var $t = $(this);
     if(e.which==8){
     insertAtCursor(this, ';) ');
+    }
+    if (e.which==46){
+    insertAtCursor(this, ' ;)');
     }
 });
