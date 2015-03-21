@@ -17,7 +17,7 @@ function insertAtCursor(myField, myValue) {
     } else {
         myField.value += myValue;
     }
-}
+};
 
 $('textarea').bind('keydown',function (e) {
     var $t = $(this);
@@ -28,10 +28,6 @@ $('textarea').bind('keydown',function (e) {
     }
 });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 $('input').bind('keydown',function (e) {
     var $t = $(this);
     if (e.which==8){
@@ -40,8 +36,11 @@ $('input').bind('keydown',function (e) {
     insertAtCursor(this, ' ;)');
     }
 });
+<<<<<<< HEAD:script.js
 
+=======
+>>>>>>> origin/master:scripts/script.js
 // delete key = 46
 //Popupbox method
 //window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+0008'||e.keyIdentifier=='Backspace'){window.alert("this is a string")}},true);
->>>>>>> origin/master
+
