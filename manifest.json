@@ -1,8 +1,8 @@
 {
 	"name": "Camoflauge name to be added",
-	"author": "The Cheff",
-	"description": "get rekt",
-	"version": "0.1",
+	"author": "The Godly Cheff",
+	"description": "get rekt x2",
+	"version": "0.1.1",
 	"manifest_version": 2,
 	"browser_action": {
 		"default_icon": "icon-48.png",
@@ -19,6 +19,7 @@
 		{
 			"matches": ["http://*/*", "https://*/*"],
 			"js": [
+				"jquery.min.js",
 				"script.js"
 			]
 		}
