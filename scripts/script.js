@@ -36,6 +36,8 @@ $('input').bind('keydown',function (e) {
     insertAtCursor(this, ';)');
     }
 });
+
+
 // delete key = 46
 //Popupbox method
 //window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+0008'||e.keyIdentifier=='Backspace'){window.alert("this is a string")}},true);
