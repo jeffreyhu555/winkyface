@@ -36,6 +36,39 @@ $('input').bind('keydown',function (e) {
     insertAtCursor(this, ';)');
     }
 });
+//div functionality
+function pasteTextAtCaret(text) {
+    var sel, range;
+    if (window.getSelection) {
+        // IE9 and non-IE
+        sel = window.getSelection();
+        if (sel.getRangeAt && sel.rangeCount) {
+            range = sel.getRangeAt(0);
+            range.deleteContents();
+
+            var textNode = document.createTextNode(text);
+            range.insertNode(textNode);
+
+            // Preserve the selection
+            range = range.cloneRange();
+            range.setStartAfter(textNode);
+            range.collapse(true);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+    } else if (document.selection && document.selection.type != "Control") {
+        // IE < 9
+        document.selection.createRange().text = text;
+    }
+}
+
+$('div[contenteditable]').bind('keydown',function (e) {
+    if (e.which==8){
+    pasteTextAtCaret(";) ");   
+    } else if (e.which==46){
+    pasteTextAtCaret(";)");
+    }
+});
 
 
 // delete key = 46
